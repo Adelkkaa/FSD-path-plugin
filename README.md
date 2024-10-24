@@ -1,4 +1,9 @@
+
+
+
 # eslint-plugin-fsd-checker-by-adelkkaa
+
+### This plugin checks the correct use of absolute imports using FSD, using ("@/*) as an alias
 
 plugin for course UlbiTV
 
@@ -58,10 +63,3 @@ TODO: Run eslint-doc-generator to generate the configs list (or delete this sect
 
 <!-- end auto-generated configs list -->
 
-## Rules
-
-<!-- begin auto-generated rules list -->
-
-TODO: Run eslint-doc-generator to generate the rules list.
-
-<!-- end auto-generated rules list -->
