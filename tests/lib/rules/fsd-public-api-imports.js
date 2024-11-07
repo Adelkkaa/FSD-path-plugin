@@ -57,11 +57,13 @@ ruleTester.run("fsd-public-api-imports", rule, {
     {
       code: "import { addCommentFormActions, addCommentFormReducer } from '@/entities/Article/model/file.ts'",
       errors: [{ message: "Абсолютный импорт разрешен только из Public API (index.ts)"}],
+      output: "import { addCommentFormActions, addCommentFormReducer } from '@/entities/Article'",
       options: aliasOptions,
     },
     {
       filename: 'C:/Users/tim/Desktop/javascript/production_project/src/entities/StoreDecorator.tsx',
       code: "import { addCommentFormActions, addCommentFormReducer } from '@/entities/Article/testing/file.tsx'",
+      output: "import { addCommentFormActions, addCommentFormReducer } from '@/entities/Article'",
       errors: [{message: 'Абсолютный импорт разрешен только из Public API (index.ts)'}],
       options: [{
         alias: '@',
